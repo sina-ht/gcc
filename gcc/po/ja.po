@@ -22,7 +22,7 @@ msgstr ""
 "Project-Id-Version: gcc 10.2.0\n"
 "Report-Msgid-Bugs-To: https://gcc.gnu.org/bugs/\n"
 "POT-Creation-Date: 2020-07-20 18:08+0000\n"
-"PO-Revision-Date: 2020-07-24 15:52+0900\n"
+"PO-Revision-Date: 2020-07-27 19:27+0900\n"
 "Last-Translator: Hiroshi Takekawa <sian@big.or.jp>\n"
 "Language-Team: Japanese <translation-team-ja@lists.sourceforge.net>\n"
 "Language: ja\n"
@@ -139,9 +139,9 @@ msgstr ""
 "適切ならば前処理後のソースをつけてください。\n"
 
 #: diagnostic.c:593
-#, fuzzy, c-format
+#, c-format
 msgid "See %s for instructions.\n"
-msgstr "倍精度浮動小数命令を有効にする"
+msgstr "報告は %s をご覧ください。\n"
 
 #: diagnostic.c:602
 #, c-format
@@ -150,12 +150,11 @@ msgstr "コンパイルを停止しました。\n"
 
 #: diagnostic.c:663
 msgid "In file included from"
-msgstr ""
+msgstr "次のファイルから読み込み: "
 
 #: diagnostic.c:664
-#, fuzzy
 msgid "                 from"
-msgstr "          %s"
+msgstr "         次から読み込み: "
 
 #: diagnostic.c:1135
 #, c-format
@@ -365,14 +364,13 @@ msgstr ""
 "  -print-prog-name=<prog>  コンパイラの部品 <prog> へのフルパスを表示する\n"
 
 #: gcc.c:3561
-#, fuzzy
 msgid ""
 "  -print-multiarch         Display the target's normalized GNU triplet, used "
 "as\n"
 "                           a component in the library path.\n"
 msgstr ""
-"  -print-multiarch         コマンドラインオプションと複数のライブラリ探索し\n"
-"                               ディレクトリとの対応を表示する\n"
+"  -print-multiarch         ライブラリの検索に用いられる\n"
+"                           ターゲットの決められた GNU 3つ組を表示します。\n"
 
 #: gcc.c:3564
 msgid ""
@@ -382,20 +380,18 @@ msgstr ""
 "  -print-multi-directory   libgcc のバージョンディレクトリルートを表示する\n"
 
 #: gcc.c:3565
-#, fuzzy
 msgid ""
 "  -print-multi-lib         Display the mapping between command line options "
 "and\n"
 "                           multiple library search directories.\n"
 msgstr ""
-"  -print-multi-lib         コマンドラインオプションと複数のライブラリ探索し\n"
-"                               ディレクトリとの対応を表示する\n"
+"  -print-multi-lib         コマンドラインオプションと\n"
+"                           マルチライブラリ探索ディレクトリとの対応を表示する\n"
 
 #: gcc.c:3568
-#, fuzzy
 msgid ""
 "  -print-multi-os-directory Display the relative path to OS libraries.\n"
-msgstr "  -print-multi-os-directory OSライブラリ関連のパスを表示する\n"
+msgstr "  -print-multi-os-directory OSライブラリへの相対パスを表示する\n"
 
 #: gcc.c:3569
 msgid "  -print-sysroot           Display the target libraries directory.\n"
@@ -409,7 +405,6 @@ msgid ""
 msgstr "  -print-sysroot-headers-suffix ヘッダを見つけるために使用する sysroot 接頭辞を表示する\n"
 
 #: gcc.c:3571
-#, fuzzy
 msgid ""
 "  -Wa,<options>            Pass comma-separated <options> on to the "
 "assembler.\n"
@@ -417,7 +412,6 @@ msgstr ""
 "  -Wa,<options>            カンマ区切りの <options> をアセンブラに渡す\n"
 
 #: gcc.c:3572
-#, fuzzy
 msgid ""
 "  -Wp,<options>            Pass comma-separated <options> on to the "
 "preprocessor.\n"
@@ -425,33 +419,27 @@ msgstr ""
 "  -Wp,<options>            カンマ区切りの <options> をプリプロセッサに渡す\n"
 
 #: gcc.c:3573
-#, fuzzy
 msgid ""
 "  -Wl,<options>            Pass comma-separated <options> on to the linker.\n"
 msgstr "  -Wl,<options>            カンマ区切りの <options> をリンカに渡す\n"
 
 #: gcc.c:3574
-#, fuzzy
 msgid "  -Xassembler <arg>        Pass <arg> on to the assembler.\n"
 msgstr "  -Xassembler <arg>        <arg> をアセンブラに渡す\n"
 
 #: gcc.c:3575
-#, fuzzy
 msgid "  -Xpreprocessor <arg>     Pass <arg> on to the preprocessor.\n"
 msgstr "  -Xpreprocessor <arg>     <arg> をプリプロセッサに渡す\n"
 
 #: gcc.c:3576
-#, fuzzy
 msgid "  -Xlinker <arg>           Pass <arg> on to the linker.\n"
 msgstr "  -Xlinker <arg>           <arg> をリンカに渡す\n"
 
 #: gcc.c:3577
-#, fuzzy
 msgid "  -save-temps              Do not delete intermediate files.\n"
 msgstr "  -save-temps              中間ファイルを削除しない\n"
 
 #: gcc.c:3578
-#, fuzzy
 msgid "  -save-temps=<arg>        Do not delete intermediate files.\n"
 msgstr "  -save-temps=<arg>        中間ファイルを削除しない\n"
 
@@ -462,17 +450,14 @@ msgid ""
 msgstr ""
 
 #: gcc.c:3582
-#, fuzzy
 msgid "  -pipe                    Use pipes rather than intermediate files.\n"
 msgstr "  -pipe                    中間ファイルではなくパイプを使う\n"
 
 #: gcc.c:3583
-#, fuzzy
 msgid "  -time                    Time the execution of each subprocess.\n"
 msgstr "  -time                    子プロセスごとの実行時間を計測する\n"
 
 #: gcc.c:3584
-#, fuzzy
 msgid ""
 "  -specs=<file>            Override built-in specs with the contents of "
 "<file>.\n"
@@ -480,7 +465,6 @@ msgstr ""
 "  -specs=<file>            組み込み specs を <file> の内容で上書きする\n"
 
 #: gcc.c:3585
-#, fuzzy
 msgid ""
 "  -std=<standard>          Assume that the input sources are for "
 "<standard>.\n"
@@ -488,7 +472,6 @@ msgstr ""
 "  -std=<standard>          入力ソースを <standard> に準拠すると見なす\n"
 
 #: gcc.c:3586
-#, fuzzy
 msgid ""
 "  --sysroot=<directory>    Use <directory> as the root directory for "
 "headers\n"
@@ -498,14 +481,12 @@ msgstr ""
 "                           <directory> を使用する\n"
 
 #: gcc.c:3589
-#, fuzzy
 msgid ""
 "  -B <directory>           Add <directory> to the compiler's search paths.\n"
 msgstr ""
 "  -B <directory>           <directory> をコンパイラの探索パスに追加する\n"
 
 #: gcc.c:3590
-#, fuzzy
 msgid ""
 "  -v                       Display the programs invoked by the compiler.\n"
 msgstr ""
@@ -518,7 +499,6 @@ msgid ""
 msgstr ""
 
 #: gcc.c:3592
-#, fuzzy
 msgid ""
 "  -E                       Preprocess only; do not compile, assemble or "
 "link.\n"
@@ -527,19 +507,16 @@ msgstr ""
 "わない\n"
 
 #: gcc.c:3593
-#, fuzzy
 msgid "  -S                       Compile only; do not assemble or link.\n"
 msgstr ""
 "  -S                       コンパイルのみ行う。アセンブル、リンクは行わない\n"
 
 #: gcc.c:3594
-#, fuzzy
 msgid "  -c                       Compile and assemble, but do not link.\n"
 msgstr ""
 "  -c                       コンパイル、アセンブルを行う。リンクは行わない\n"
 
 #: gcc.c:3595
-#, fuzzy
 msgid "  -o <file>                Place the output into <file>.\n"
 msgstr "  -o <file>                <file> に出力する\n"
 
@@ -579,9 +556,9 @@ msgstr ""
 "には -W<letter> オプションを使わなければなりません。\n"
 
 #: gcc.c:6059
-#, fuzzy, c-format
+#, c-format
 msgid "Processing spec (%s), which is '%s'\n"
-msgstr "spec %c%s%c を処理中, これは '%s' です\n"
+msgstr "spec (%s) を処理中, これは '%s' です\n"
 
 #: gcc.c:6809
 #, c-format
@@ -903,13 +880,13 @@ msgid ""
 msgstr "  -b, --branch-probabilities      出力に分岐可能性情報を含める\n"
 
 #: gcov.c:893
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "  -c, --branch-counts             Output counts of branches taken\n"
 "                                    rather than percentages\n"
 msgstr ""
-"  -c, --branch-counts             分岐に関する百分率では無く行われた\n"
-"                                    回数を取得する\n"
+"  -c, --branch-counts             分岐に関するカウントを百分率ではなく\n"
+"                                    回数で出力する\n"
 
 #: gcov.c:895
 #, c-format
@@ -1027,9 +1004,9 @@ msgid "gcov %s%s\n"
 msgstr "gcov %s%s\n"
 
 #: gcov.c:1259
-#, fuzzy, c-format
+#, c-format
 msgid "'%s' file is already processed\n"
-msgstr "入力ファイルを前処理済として取り扱う"
+msgstr "入力ファイル '%s' を前処理済として取り扱う\n"
 
 #: gcov.c:1373
 #, c-format
@@ -1047,9 +1024,9 @@ msgid "Could not open output file '%s'\n"
 msgstr "出力ファイル '%s' を開けませんでした\n"
 
 #: gcov.c:1386
-#, fuzzy, c-format
+#, c-format
 msgid "Removing '%s'\n"
-msgstr "[%s を離れます]\n"
+msgstr "'%s' を削除します\n"
 
 #: gcov.c:1498
 #, c-format
@@ -1072,14 +1049,14 @@ msgid "(the message is displayed only once per source file)\n"
 msgstr "(このメッセージはソースファイルごとに一回のみ表示されます)\n"
 
 #: gcov.c:1698
-#, fuzzy, c-format
+#, c-format
 msgid "%s:cannot open notes file\n"
-msgstr "%s: ソースファイルを開けません\n"
+msgstr "%s: ノートファイルを開けません\n"
 
 #: gcov.c:1704
-#, fuzzy, c-format
+#, c-format
 msgid "%s:not a gcov notes file\n"
-msgstr "%s: gcov データファイルではありません\n"
+msgstr "%s: gcov ノートファイルではありません\n"
 
 #: gcov.c:1717
 #, c-format
@@ -1212,9 +1189,9 @@ msgid "branch %2d taken %s%s"
 msgstr ""
 
 #: gcov.c:2808
-#, fuzzy, c-format
+#, c-format
 msgid "branch %2d never executed"
-msgstr "命令は決して実行されません"
+msgstr "命令 %2d は決して実行されません"
 
 #: gcov.c:2811
 #, c-format
@@ -1232,9 +1209,9 @@ msgid "unconditional %2d never executed\n"
 msgstr ""
 
 #: gcov.c:3074
-#, fuzzy, c-format
+#, c-format
 msgid "Cannot open source file %s\n"
-msgstr "%s: ソースファイルを開けません\n"
+msgstr "ソースファイル %s を開けません\n"
 
 #: gcse.c:2596
 msgid "PRE disabled"
