@@ -22,7 +22,7 @@ msgstr ""
 "Project-Id-Version: gcc 10.2.0\n"
 "Report-Msgid-Bugs-To: https://gcc.gnu.org/bugs/\n"
 "POT-Creation-Date: 2020-07-20 18:08+0000\n"
-"PO-Revision-Date: 2020-07-27 19:27+0900\n"
+"PO-Revision-Date: 2020-07-29 19:20+0900\n"
 "Last-Translator: Hiroshi Takekawa <sian@big.or.jp>\n"
 "Language-Team: Japanese <translation-team-ja@lists.sourceforge.net>\n"
 "Language: ja\n"
@@ -767,26 +767,26 @@ msgid ""
 msgstr ""
 
 #: gcov-tool.c:420
-#, fuzzy, c-format
+#, c-format
 msgid "    -f, --function                      Print function level info\n"
-msgstr "  -h, --help                      このヘルプを表示して終了する\n"
+msgstr "    -f, --function                      関数レベルの情報を表示\n"
 
 #: gcov-tool.c:421
-#, fuzzy, c-format
+#, c-format
 msgid "    -F, --fullname                      Print full filename\n"
-msgstr "  -h, --help                      このヘルプを表示して終了する\n"
+msgstr "    -F, --fullname                      ファイル名をフルパスで表示\n"
 
 #: gcov-tool.c:422
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "    -h, --hotonly                       Only print info for hot objects/"
 "functions\n"
-msgstr "  -h, --help                      このヘルプを表示して終了する\n"
+msgstr "    -h, --hotonly                       hot なオブジェクト/関数のみ情報を表示\n"
 
 #: gcov-tool.c:423
-#, fuzzy, c-format
+#, c-format
 msgid "    -o, --object                        Print object level info\n"
-msgstr "  -h, --help                      このヘルプを表示して終了する\n"
+msgstr "    -o, --object                        オブジェクトレベルの情報を表示\n"
 
 #: gcov-tool.c:424
 #, c-format
@@ -904,11 +904,11 @@ msgid "  -h, --help                      Print this help, then exit\n"
 msgstr "  -h, --help                      このヘルプを表示して終了する\n"
 
 #: gcov.c:898
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "  -i, --json-format               Output JSON intermediate format into .gcov."
 "json.gz file\n"
-msgstr "  -n, --no-output                 出力ファイルを作成しない\n"
+msgstr "  -i, --json-format               .gcov.json.gz ファイルに JSON 中間フォーマットで出力\n"
 
 #: gcov.c:899
 #, c-format
@@ -989,14 +989,14 @@ msgid "  -v, --version                   Print version number, then exit\n"
 msgstr "  -v, --version                   バージョン番号を表示して終了する\n"
 
 #: gcov.c:913
-#, fuzzy, c-format
+#, c-format
 msgid "  -w, --verbose                   Print verbose informations\n"
-msgstr "  -v, --verbose           実行時に追加の情報を表示する\n"
+msgstr "  -w, --verbose                   冗長な情報を出力\n"
 
 #: gcov.c:914
-#, fuzzy, c-format
+#, c-format
 msgid "  -x, --hash-filenames            Hash long pathnames\n"
-msgstr "  -p, --preserve-paths            すべてのパス名要素を保護する\n"
+msgstr "  -x, --hash-filenames            長いパス名をハッシュする\n"
 
 #: gcov.c:925
 #, c-format
@@ -1373,11 +1373,13 @@ msgid ""
 msgstr ""
 
 #: opts.c:1588
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "  Known valid arguments for %s option:\n"
 "   "
-msgstr "-mcpu= オプションへの認識出来ない引数 '%s' です"
+msgstr ""
+"  %s オプションの有効な引数は以下の通り:\n"
+"   "
 
 #: opts.c:1638
 msgid "The following options are target specific"
@@ -1429,9 +1431,9 @@ msgid "during %s pass: %s\n"
 msgstr ""
 
 #: passes.c:1790
-#, fuzzy, c-format
+#, c-format
 msgid "dump file: %s\n"
-msgstr "zip/jar ファイル %s は不正です"
+msgstr "ダンプファイル: %s\n"
 
 #: plugin.c:924
 msgid "Event"
@@ -1512,9 +1514,9 @@ msgid "%s%s%s %sversion %s (%s) compiled by CC, "
 msgstr "%s%s%s %sversion %s (%s) compiled by CC, "
 
 #: toplev.c:619
-#, fuzzy, c-format
+#, c-format
 msgid "GMP version %s, MPFR version %s, MPC version %s, isl version %s\n"
-msgstr "GMP version %s, MPFR version %s, MPC version %s\n"
+msgstr "GMP version %s, MPFR version %s, MPC version %s, isl version %s\n"
 
 #: toplev.c:621
 #, c-format
@@ -1563,9 +1565,8 @@ msgid "function not inlinable"
 msgstr "inline にできない関数です"
 
 #: cif-code.def:60
-#, fuzzy
 msgid "function body can be overwritten at link time"
-msgstr "関数本体がリンク時に溢れるかもしれません"
+msgstr "関数本体がリンク時に上書き可能です"
 
 #: cif-code.def:64
 msgid "function not inline candidate"
@@ -1645,9 +1646,8 @@ msgid "callee refers to comdat-local symbols"
 msgstr ""
 
 #: cif-code.def:133
-#, fuzzy
 msgid "function attribute mismatch"
-msgstr "複数の関数型属性が指定されています"
+msgstr "関数属性が合いません"
 
 #: cif-code.def:138
 msgid ""
@@ -1656,9 +1656,8 @@ msgid ""
 msgstr ""
 
 #: cif-code.def:143
-#, fuzzy
 msgid "unreachable"
-msgstr "回復できないエラー"
+msgstr "到達不可能"
 
 #. The remainder are real diagnostic types.
 #: diagnostic.def:33
@@ -2005,9 +2004,9 @@ msgstr "コード '%c' に対する無効な被演算子です"
 
 #: config/aarch64/aarch64.c:10108 config/aarch64/aarch64.c:10119
 #: config/aarch64/aarch64.c:10271 config/aarch64/aarch64.c:10282
-#, fuzzy, c-format
+#, c-format
 msgid "invalid vector constant"
-msgstr "無効なベクトル順列定数です"
+msgstr "無効なベクトル定数です"
 
 #: config/aarch64/aarch64.c:10131 config/aarch64/aarch64.c:10143
 #, c-format
@@ -2025,9 +2024,9 @@ msgid "missing operand"
 msgstr "被演算子がありません"
 
 #: config/aarch64/aarch64.c:10308
-#, fuzzy, c-format
+#, c-format
 msgid "invalid constant"
-msgstr "無効な命令:"
+msgstr "無効な定数"
 
 #: config/aarch64/aarch64.c:10311
 #, fuzzy, c-format
@@ -2341,24 +2340,20 @@ msgid "internal compiler error.  Incorrect shift:"
 msgstr "コンパイラ内部エラー。正しくないシフト:"
 
 #: config/avr/avr.c:8666
-#, fuzzy
 msgid "unsupported fixed-point conversion"
-msgstr "固定小数変換内で無効な型です"
+msgstr "サポートしていない固定小数点変換です"
 
 #: config/avr/avr.c:10023
-#, fuzzy
 msgid "variable"
-msgstr "STAT 変数"
+msgstr "変数"
 
 #: config/avr/avr.c:10028
-#, fuzzy
 msgid "function parameter"
-msgstr "仮引数 %q+D が再宣言されました"
+msgstr "関数パラメータ"
 
 #: config/avr/avr.c:10033
-#, fuzzy
 msgid "structure field"
-msgstr "構造体がここで定義されています"
+msgstr "構造体フィールド"
 
 #: config/avr/avr.c:10039
 #, fuzzy
@@ -2739,9 +2734,9 @@ msgid "invalid constraints for operand"
 msgstr "演算子に対する無効な制約です"
 
 #: config/i386/i386.c:13235
-#, fuzzy, c-format
+#, c-format
 msgid "invalid vector immediate"
-msgstr "無効なベクトル順列定数です"
+msgstr "無効なベクトル直接表記"
 
 #: config/i386/i386.c:16163
 msgid "unknown insn mode"
@@ -3738,9 +3733,8 @@ msgid "expected label"
 msgstr "%<__label__%> が予期されます"
 
 #: cp/call.c:3868
-#, fuzzy
 msgid "candidate:"
-msgstr "候補 1:"
+msgstr "候補:"
 
 #: cp/call.c:7220
 #, fuzzy
@@ -3795,9 +3789,9 @@ msgid "<unnamed>"
 msgstr "<名前なし>"
 
 #: cp/error.c:770
-#, fuzzy, c-format
+#, c-format
 msgid "<unnamed %s>"
-msgstr "<名前なし>"
+msgstr "<名前なし %s>"
 
 #: cp/error.c:896
 msgid "<typeprefixerror>"
@@ -3830,14 +3824,12 @@ msgid "{anonymous}"
 msgstr "{無名}"
 
 #: cp/error.c:1217
-#, fuzzy
 msgid "(anonymous namespace)"
-msgstr "(無名)"
+msgstr "(無名名前空間)"
 
 #: cp/error.c:1317
-#, fuzzy
 msgid "<template arguments error>"
-msgstr "<テンプレートパラメータエラー>"
+msgstr "<テンプレート引数エラー>"
 
 #: cp/error.c:1339
 msgid "<enumerator>"
@@ -3875,7 +3867,6 @@ msgid "<unparsed>"
 msgstr "<未構文解析>"
 
 #: cp/error.c:2842
-#, fuzzy
 msgid "<lambda>"
 msgstr "<ラムダ"
 
@@ -4774,9 +4765,8 @@ msgid "lseek failed while reading export data"
 msgstr ""
 
 #: go/go-backend.c:173
-#, fuzzy
 msgid "memory allocation failed while reading export data"
-msgstr "メモリ配置に失敗しました"
+msgstr "export データを読み込み中にメモリ確保に失敗しました"
 
 #: go/go-backend.c:181
 msgid "read failed while reading export data"
@@ -4787,19 +4777,16 @@ msgid "short read while reading export data"
 msgstr ""
 
 #: gcc.c:762 gcc.c:766 gcc.c:821
-#, fuzzy
 msgid "-gz is not supported in this configuration"
-msgstr "-m%s はこの設定ではサポートされていません"
+msgstr "-gz はこの構成ではサポートされていません"
 
 #: gcc.c:772 gcc.c:832
-#, fuzzy
 msgid "-gz=zlib is not supported in this configuration"
-msgstr "ifunc はこの設定ではサポートされていません"
+msgstr "-gz=zlib はこの構成ではサポートされていません"
 
 #: gcc.c:977
-#, fuzzy
 msgid "-fuse-linker-plugin is not supported in this configuration"
-msgstr "ifunc はこの設定ではサポートされていません"
+msgstr "-fuse-linker-plugin はこの構成ではサポートされていません"
 
 #: gcc.c:992
 msgid "cannot specify -static with -fsanitize=address"
@@ -4810,14 +4797,12 @@ msgid "cannot specify -static with -fsanitize=thread"
 msgstr ""
 
 #: gcc.c:1016
-#, fuzzy
 msgid "-fvtable-verify=std is not supported in this configuration"
-msgstr "弱い参照はこの設定ではサポートされていません"
+msgstr "-fvtable-verify=std はこの構成ではサポートされていません"
 
 #: gcc.c:1018
-#, fuzzy
 msgid "-fvtable-verify=preinit is not supported in this configuration"
-msgstr "この設定では別名定義はサポートされていません"
+msgstr "-fvtable-verify=preinit はこの構成ではサポートされていません"
 
 #: gcc.c:1146 ada/gcc-interface/lang-specs.h:33
 msgid "-pg and -fomit-frame-pointer are incompatible"
@@ -4832,9 +4817,8 @@ msgid "-E or -x required when input is from standard input"
 msgstr "入力が標準入力からの場合は -E または -x が必要です"
 
 #: config/darwin.h:132 config/darwin.h:480
-#, fuzzy
 msgid "gsplit-dwarf is not supported on this platform"
-msgstr "init_priority 属性はこのプラットフォームではサポートされていません"
+msgstr "gsplit-dwarf はこの構成ではサポートされていません"
 
 #: config/darwin.h:136 config/rs6000/darwin.h:123
 msgid " conflicting code gen style switches are used"
@@ -4845,9 +4829,8 @@ msgid "the y option is obsolete and ignored"
 msgstr ""
 
 #: config/darwin.h:143
-#, fuzzy
 msgid "rdynamic is not supported"
-msgstr "-fpic はサポートされていません"
+msgstr "rdynamic はサポートされていません"
 
 #: config/darwin.h:300
 msgid "-current_version only allowed with -dynamiclib"
@@ -4899,9 +4882,8 @@ msgid "does not support multilib"
 msgstr "multilib はサポートしません"
 
 #: config/sol2.h:452
-#, fuzzy
 msgid "-pie is not supported in this configuration"
-msgstr "ifunc はこの設定ではサポートされていません"
+msgstr "-pie はこの構成ではサポートされていません"
 
 #: config/vxworks.h:139
 msgid "-Xbind-now and -Xbind-lazy are incompatible"
@@ -4909,18 +4891,16 @@ msgstr "-Xbind-now と -Xbind-lazy は併用できません"
 
 #: config/aarch64/aarch64-freebsd.h:37 config/arm/freebsd.h:49
 #: config/riscv/freebsd.h:44
-#, fuzzy
 msgid "consider using `-pg' instead of `-p' with gprof (1)"
-msgstr "gprof(1) を使うときは '-p' の代わりに '-pg' を使用してください"
+msgstr "gprof(1) を使うときは `-p' の代わりに `-pg' を使用してください"
 
 #: config/arc/arc.h:68 config/mips/mips.h:1452
 msgid "may not use both -EB and -EL"
 msgstr "-EB と -EL の両方を使用することは出来ません"
 
 #: config/arm/arm.h:93
-#, fuzzy
 msgid "-mfloat-abi=soft and -mfloat-abi=hard may not be used together"
-msgstr "-msoft-float と -mhard_float は併用できません"
+msgstr "-mfloat-abi=soft と -mfloat-abi=hard は併用できません"
 
 #: config/arm/arm.h:95 config/tilegx/tilegx.h:520 config/tilegx/tilegx.h:525
 msgid "-mbig-endian and -mlittle-endian may not be used together"
@@ -4954,9 +4934,8 @@ msgid "Darwin does not support -mfentry or associated options"
 msgstr ""
 
 #: config/i386/sol2.h:59
-#, fuzzy
 msgid "-mx32 is not supported on Solaris"
-msgstr "-f%s はサポートされていません: 無視されました"
+msgstr "-mx32 は Solaris ではサポートされていません"
 
 #: config/mcore/mcore.h:53
 msgid "the m210 does not have little endian support"
@@ -5784,14 +5763,14 @@ msgid ""
 msgstr ""
 
 #: c-family/c.opt:186
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Do not discard comments."
-msgstr "コメントを破棄しない"
+msgstr "コメントを破棄しない。"
 
 #: c-family/c.opt:190
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Do not discard comments in macro expansions."
-msgstr "マクロ展開内のコメントを破棄しない"
+msgstr "マクロ展開内のコメントを破棄しない。"
 
 #: c-family/c.opt:194
 #, fuzzy, no-c-format
@@ -5813,44 +5792,44 @@ msgid "Enable parsing GIMPLE."
 msgstr "前処理を有効にする"
 
 #: c-family/c.opt:209
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Print the name of header files as they are used."
-msgstr "使用されるヘッダファイル名を表示する"
+msgstr "使用されるヘッダファイル名を表示する。"
 
 #: c-family/c.opt:213
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "-I <dir>\tAdd <dir> to the end of the main include path."
 msgstr "-I <dir>\t主インクルードパスの最後に <dir> を追加する"
 
 #: c-family/c.opt:217
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Generate make dependencies."
 msgstr "make 依存関係を生成する"
 
 #: c-family/c.opt:221
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Generate make dependencies and compile."
 msgstr "make 依存関係を生成し、コンパイルする"
 
 #: c-family/c.opt:225
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "-MF <file>\tWrite dependency output to the given file."
 msgstr "-MF <file>\t与えられたファイルに依存関係を出力する"
 
 #: c-family/c.opt:229
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Treat missing header files as generated files."
-msgstr "存在しないヘッダファイルを生成されたファイルとして取り扱う"
+msgstr "存在しないヘッダファイルを生成されたファイルとして取り扱う。"
 
 #: c-family/c.opt:233
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Like -M but ignore system header files."
-msgstr "-M と同様だがシステムヘッダファイルを無視する"
+msgstr "-M と同様だがシステムヘッダファイルを無視する。"
 
 #: c-family/c.opt:237
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Like -MD but ignore system header files."
-msgstr "-MD と同様だがシステムヘッダファイルを無視する"
+msgstr "-MD と同様だがシステムヘッダファイルを無視する。"
 
 #: c-family/c.opt:241
 #, fuzzy, no-c-format
@@ -5873,7 +5852,7 @@ msgid "Do not generate #line directives."
 msgstr "#line 指示を生成しない"
 
 #: c-family/c.opt:257
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "-U<macro>\tUndefine <macro>."
 msgstr "-U<macro>\tマクロ <macro> を未定義状態にする"
 
@@ -5906,7 +5885,7 @@ msgid ""
 msgstr ""
 
 #: c-family/c.opt:280
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Warn about suspicious uses of memory addresses."
 msgstr "メモリアドレスの疑わしい使用法について警告する"
 
@@ -5923,7 +5902,7 @@ msgid ""
 msgstr ""
 
 #: c-family/c.opt:304 ada/gcc-interface/lang.opt:57
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Enable most warning messages."
 msgstr "ほとんどの警告メッセージを有効にする"
 
@@ -5980,7 +5959,7 @@ msgid ""
 msgstr ""
 
 #: c-family/c.opt:351
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Warn about casting functions to incompatible types."
 msgstr "互換性のない型への関数キャストに関して警告する"
 
@@ -6062,7 +6041,7 @@ msgid ""
 msgstr "ISO C++ 1998 と ISO C++ 200x で意味が異なる C++ 構文に関して警告する"
 
 #: c-family/c.opt:416
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Warn about casts between incompatible function types."
 msgstr "互換性のない型への関数キャストに関して警告する"
 
