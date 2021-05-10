@@ -22,7 +22,7 @@ msgstr ""
 "Project-Id-Version: gcc 10.2.0\n"
 "Report-Msgid-Bugs-To: https://gcc.gnu.org/bugs/\n"
 "POT-Creation-Date: 2021-02-05 21:38+0000\n"
-"PO-Revision-Date: 2021-02-09 23:29+0900\n"
+"PO-Revision-Date: 2021-05-11 07:36+0900\n"
 "Last-Translator: Hiroshi Takekawa <sian@big.or.jp>\n"
 "Language-Team: Japanese <translation-team-ja@lists.sourceforge.net>\n"
 "Language: ja\n"
@@ -994,7 +994,7 @@ msgstr "  -p, --preserve-paths            すべてのパス名要素を保護�
 msgid ""
 "  -q, --use-hotness-colors        Emit perf-like colored output for hot "
 "lines\n"
-msgstr "  -n, --no-output                 出力ファイルを作成しない\n"
+msgstr "  -q, --use-hotness-colors        perf のように hot line に色をつける\n"
 
 #: gcov.c:945
 #, fuzzy, c-format
